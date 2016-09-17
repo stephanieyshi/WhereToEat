@@ -1,3 +1,5 @@
+/* colors */
+/* green: #D1E751; blue: #4DBCE9; darker blue: #26ADE4;*/
 html, body {
 	margin: 0;
 	padding: 0;
@@ -7,13 +9,14 @@ body {
 	background-color: #FFFFFF;
 }
 ::selection {
-	background-color: #34BBBF;
+	background-color: #4DBCE9;
 	color: #FFFFFF;
 }
 .title .name {
 	position: absolute;
-	top: 30%;
-  	left: 50%;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
 	-webkit-transform: translate(-50%,-65%);
     -ms-transform: translate(-50%,-65%);
     transform: translate(-50%,-65%);
@@ -22,14 +25,15 @@ body {
     margin: 0;	
 }
 .title .name h1 {
-    font-family: 'Open Sans Light', sans-serif;
-	color: #2C9FA3;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+	color: #26ADE4;
 	font-size: 54pt;
 	/*margin: 0;*/
 }
 .title a {
 	text-decoration: none;
-	color: #2C9FA3;
+	color: #4DBCE9;
 	-webkit-transition-duration: 1s; 
 	-moz-transition-duration: 1s;
 	-o-transition-duration: 1s;
@@ -43,12 +47,14 @@ body {
 
 .content {
 	position: absolute;
-	top: 30%;
-  	left: 50%;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    margin-bottom: -50%;
     -webkit-transform: translate(-50%, 0%);
     -ms-transform: translate(-50%, 0%);
     transform: translate(-50%, 0%);
-    font-family: 'Heebo', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: #777777;
     font-size: 14pt;
 	text-align: justify;
@@ -56,7 +62,7 @@ body {
 	font-weight: 200;
 }
 .content a {
-	font-family: 'Heebo';
+	font-family: 'Open Sans';
 	font-weight: bold;
 	text-decoration: none;
 	color: #2C9FA3;
@@ -65,13 +71,13 @@ body {
 	-o-transition-duration: 1s;
 }
 .content a:hover {
-	color: #C3C3C3;
+	color: #FFFFFF;
 	-webkit-transition-duration: .5s; 
 	-moz-transition-duration: .5s;
 	-o-transition-duration: .5s;
 }
 .content .intro #links {
-	font-family: 'Heebo', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -99,4 +105,36 @@ body {
 	-webkit-transition-duration: .5s; 
 	-moz-transition-duration: .5s;
 	-o-transition-duration: .5s;
+}
+
+.content .buttons a {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	-webkit-transition-duration: 1s; 
+	-moz-transition-duration: 1s;
+	-o-transition-duration: 1s;
+}
+
+/*.content .buttons a:hover {
+	background-color: #D1E751;
+	-webkit-transition-duration: 0.5s; 
+	-moz-transition-duration: 0.5s;
+	-o-transition-duration: 0.5s;
+}*/
+
+.button_createroom {
+	background-color: #D1E751!important; /* green */
+}
+
+.button_joinroom {
+   	background-color: #4DBCE9;
+}
+
+.button_joinroom:hover {
+   	background-color: #26ADE4;
 }
