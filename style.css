@@ -127,14 +127,14 @@ body {
 	-o-transition-duration: 0.5s;
 }*/
 
+.content .buttons a:hover {
+	background-color: #C3C3C3;
+}
+
 .button_createroom {
-	background-color: #D1E751!important; /* green */
+	background-color: #D1E751; /* green */
 }
 
 .button_joinroom {
    	background-color: #4DBCE9;
-}
-
-.button_joinroom:hover {
-   	background-color: #26ADE4;
 }
