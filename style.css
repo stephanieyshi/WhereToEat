@@ -14,8 +14,9 @@ body {
 }
 .title .name {
 	position: absolute;
-	top: 30%;
-  	left: 50%;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
 	-webkit-transform: translate(-50%,-65%);
     -ms-transform: translate(-50%,-65%);
     transform: translate(-50%,-65%);
@@ -25,6 +26,7 @@ body {
 }
 .title .name h1 {
     font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
 	color: #26ADE4;
 	font-size: 54pt;
 	/*margin: 0;*/
@@ -45,8 +47,10 @@ body {
 
 .content {
 	position: absolute;
-	top: 30%;
-  	left: 50%;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    margin-bottom: -50%;
     -webkit-transform: translate(-50%, 0%);
     -ms-transform: translate(-50%, 0%);
     transform: translate(-50%, 0%);
@@ -67,7 +71,7 @@ body {
 	-o-transition-duration: 1s;
 }
 .content a:hover {
-	color: #C3C3C3;
+	color: #FFFFFF;
 	-webkit-transition-duration: .5s; 
 	-moz-transition-duration: .5s;
 	-o-transition-duration: .5s;
@@ -103,8 +107,7 @@ body {
 	-o-transition-duration: .5s;
 }
 
-.content button {
-    background-color: #4DBCE9; /* Green */
+.content .buttons a {
     border: none;
     color: white;
     padding: 15px 32px;
@@ -112,19 +115,26 @@ body {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+	-webkit-transition-duration: 1s; 
+	-moz-transition-duration: 1s;
+	-o-transition-duration: 1s;
 }
 
-a.button {
-    -webkit-appearance: button;
-    -moz-appearance: button;
-    appearance: button;
+/*.content .buttons a:hover {
+	background-color: #D1E751;
+	-webkit-transition-duration: 0.5s; 
+	-moz-transition-duration: 0.5s;
+	-o-transition-duration: 0.5s;
+}*/
 
-     background-color: #4DBCE9; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+.button_createroom {
+	background-color: #D1E751!important; /* green */
+}
+
+.button_joinroom {
+   	background-color: #4DBCE9;
+}
+
+.button_joinroom:hover {
+   	background-color: #26ADE4;
 }
