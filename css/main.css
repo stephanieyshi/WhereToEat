@@ -107,7 +107,7 @@ body {
 	-o-transition-duration: .5s;
 }
 
-#myBtn, .content .buttons a {
+#createRoom, #joinRoom {
     border: none;
     color: white;
     padding: 15px 32px;
@@ -120,7 +120,7 @@ body {
 	-o-transition-duration: 1s;
 }
 
-#myBtn:hover, .content .buttons a:hover {
+#createRoom:hover, #joinRoom:hover {
 	background-color: #C3C3C3;
 	-webkit-transition-duration: 0.5s; 
 	-moz-transition-duration: 0.5s;
