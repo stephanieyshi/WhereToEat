@@ -120,11 +120,12 @@ body {
 	-o-transition-duration: 1s;
 }
 
-.content .buttons a:hover {
+#myBtn:hover, .content .buttons a:hover {
 	background-color: #C3C3C3;
 	-webkit-transition-duration: 0.5s; 
 	-moz-transition-duration: 0.5s;
 	-o-transition-duration: 0.5s;
+	cursor: pointer;
 }
 
 .button_createroom {
@@ -136,12 +137,15 @@ body {
 }
 
 /* The Modal (background) */
-.content .buttons .modal {
+.modal {
+	font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    font-size: 18px;
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
+    /*left: 0;
+    top: 0;*/
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
@@ -150,14 +154,14 @@ body {
 }
 
 /* Modal Content */
-..content .buttons .modal-content {
+.modal-content {
     position: relative;
     background-color: #fefefe;
     margin: auto;
     padding: 0;
     border: 1px solid #888;
     width: 80%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    /*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);*/
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
     animation-name: animatetop;
@@ -194,17 +198,9 @@ body {
 /* Modal Header */
 .modal-header {
     padding: 2px 16px;
-    background-color: #5cb85c;
+    background-color: #D1E751;
     color: white;
 }
 
 /* Modal Body */
 .modal-body {padding: 2px 16px;}
-
-/* Modal Footer */
-.modal-footer {
-    padding: 2px 16px;
-    background-color: #5cb85c;
-    color: white;
-}
-

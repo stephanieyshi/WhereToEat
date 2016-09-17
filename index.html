@@ -6,6 +6,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/modal.js"></script>
 		<script type="text/javascript" src="js/jquery.leanModal.min.js"></script>
 	</head>
 	<section class="title">
@@ -14,17 +15,16 @@
 		</div>
 	</section>
 	<body>
-	<section class="content">
-		<div class="intro">
-			<p>make deciding <b>where to eat</b> easy</p>
-		</div>
-		<div class="buttons">
-			<a href="" class="button_createroom">create a room</a>
-			<a href="room.html" class="button_joinroom">join a room</a>
-		</div>
-	</section>
+		<section class="content">
+			<div class="intro">
+				<p>make deciding <b>where to eat</b> easy</p>
+			</div>
+			<div class="buttons">
+				<button id = "myBtn" class="button_createroom">create a room</button>
+				<a href="room.html" class="button_joinroom">join a room</a>
+			</div>
+		</section>
 		<!-- Trigger/Open The Modal -->
-			<button id="myBtn">Open Modal</button>
 
 			<!-- The Modal -->
 			<div id="myModal" class="modal">
@@ -33,20 +33,17 @@
 				<div class="modal-content">
 			    	<div class="modal-header">
 			      		<span class="close">x</span>
-			      			<h2>Modal Header</h2>
+			      			<h2>Room Key Code</h2>
 			    	</div>
 				    <div class="modal-body">
-				      	<p>Some text in the Modal Body</p>
+				      	<p>Your room key code is: </p>
 				      	<p>Some other text...</p>
-				    </div>
-				    <div class="modal-footer">
-				      	<h3>Modal Footer</h3>
 				    </div>
 			  	</div>
 			</div>
-
+	</body>
 	<script>
-			// Get the modal
+		// Get the modal
 		var modal = document.getElementById("myModal");
 
 		// Get the button that opens the modal
@@ -72,5 +69,4 @@
 		    }
 		}
 	</script>
-</body>
 </html>
