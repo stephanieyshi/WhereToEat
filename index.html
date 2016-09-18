@@ -24,10 +24,11 @@
 				<button id = "joinRoom" class="button_joinroom">join a room</button>
 			</div>
 		</section>
+		<section class = "popups">
 		<!-- Trigger/Open The Modal -->
 
 			<!-- The Modal -->
-			<div id="myModal" class="modal">
+			<div id="createRoomModal" class="modal">
 
 			  <!-- Modal content -->
 				<div class="modal-content">
@@ -37,36 +38,80 @@
 			    	</div>
 				    <div class="modal-body">
 				      	<p>Your room key code is: </p>
+				    </div>
+			  	</div>
+			</div>
+
+			<!-- The Modal -->
+			<div id="joinRoomModal" class="modal">
+
+			  <!-- Modal content -->
+				<div class="modal-content">
+			    	<div class="modal-header">
+			      		<span class="close">x</span>
+			      			<h2>Room Key Code</h2>
+			    	</div>
+				    <div class="modal-body">
+				      	<p>Enter your room key code: </p>
 				      	<p>Some other text...</p>
 				    </div>
 			  	</div>
 			</div>
+		</section>
 	</body>
 	<script>
+		/*CREATE ROOM*/
 		// Get the modal
-		var modal = document.getElementById("myModal");
+		var createRoomM = document.getElementById("createRoomModal");
 
 		// Get the button that opens the modal
-		var btn = document.getElementById("createRoom");
+		var btnCreate = document.getElementById("createRoom");
 
 		// Get the <span> element that closes the modal
 		var span = document.getElementsByClassName("close")[0];
 
 		// When the user clicks the button, open the modal
-		btn.onclick = function() {
-		    modal.style.display = "block";
+		btnCreate.onclick = function() {
+		    createRoomM.style.display = "block";
 		}
 
 		// When the user clicks on <span> (x), close the modal
 		span.onclick = function() {
-		    modal.style.display = "none";
+		    createRoomM.style.display = "none";
 		}
 
 		// When the user clicks anywhere outside of the modal, close it
 		window.onclick = function(event) {
-		    if (event.target == modal) {
-		        modal.style.display = "none";
+		    if (event.target == createRoomM) {
+		        createRoomM.style.display = "none";
 		    }
 		}
+
+		/*JOIN ROOM*/
+		/*// Get the modal
+		var joinRoomM = document.getElementById("joinRoomModal");
+
+		// Get the button that opens the modal
+		var btnJoin = document.getElementById("joinRoom");
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks the button, open the modal
+		btnJoin.onclick = function() {
+		    joinRoomM.style.display = "block";
+		}
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() {
+		    joinRoomM.style.display = "none";
+		}
+
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+		    if (event.target == joinRoomM) {
+		        joinRoomM.style.display = "none";
+		    }
+		}*/
 	</script>
 </html>
