@@ -57,8 +57,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     color: #777777;
     font-size: 14pt;
-	text-align: justify;
-	text-justify: auto;
+	text-align: center;
 	font-weight: 200;
 }
 .content a {
@@ -107,7 +106,7 @@ body {
 	-o-transition-duration: .5s;
 }
 
-#createRoom, #joinRoom {
+#createRoom, #joinRoom, #enterRoom {
     border: none;
     color: white;
     padding: 15px 32px;
@@ -120,7 +119,7 @@ body {
 	-o-transition-duration: 1s;
 }
 
-#createRoom:hover, #joinRoom:hover {
+#createRoom:hover, #joinRoom:hover, #enterRoom:hover {
 	background-color: #C3C3C3;
 	-webkit-transition-duration: 0.5s; 
 	-moz-transition-duration: 0.5s;
@@ -128,7 +127,7 @@ body {
 	cursor: pointer;
 }
 
-.button_createroom {
+.button_createroom, .button_enterroom {
 	background-color: #D1E751; /* green */
 }
 
@@ -160,7 +159,7 @@ body {
     margin: auto;
     padding: 0;
     border: 1px solid #888;
-    width: 50%;
+    width: 40%;
     top: 40%;
     /*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);*/
    -webkit-animation-name: animatetop;
@@ -184,7 +183,7 @@ body {
 /* The Close Button */
 .close {
     color: white;
-    float: right;
+    float: right!important;
     font-size: 28px;
     font-weight: bold;
 }
@@ -198,7 +197,7 @@ body {
 
 /* Modal Header */
 .modal-header {
-    padding: 2px 16px;
+    padding: 2px 16px 2px 16px;
     background-color: #D1E751;
     color: white;
 }
