@@ -3,6 +3,7 @@
 	<head>
 		<title>Where to Eat</title>
 		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" type="text/css" href="css/DumplingHouse.css">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script type="text/javascript" src="js/jquery.js"></script>
@@ -15,108 +16,39 @@
 		</div>
 	</section>
 	<body>
-		<section class="content">
-			<div class="location">
-				<p>located at 52 Beach St, Boston, MA 02111</p>
+		<div id="pano"></div>
+		<script async defer
+	        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefpdnNlPRGifpe2wiIoeTvc0ty1YmDzw&callback=initialize">
+	    </script>
+	    <script>
+		      function initialize() {
+		        var location = {lat: 42.368714, lng: -71.109852};
+		        var panorama = new google.maps.StreetViewPanorama(
+		            document.getElementById('pano'), {
+		              position: location,
+		              pov: {
+		                heading: 34,
+		                pitch: 10
+		              }
+		            });
+		        map.setStreetView(panorama);
+		      }
+	    </script>
+	    <section class="content">
+				<div class="location">
+					<p>located at asjdfl;sajkl;;dsa</p>
+				</div>
+				<div class="buttons">
+					<!--<button id = "createRoom" class="button_createroom">try again</button>-->
+					<form>
+					<button id = "tryAgain" class="button_tryagain" formaction="https://wheretoeat-5ff05.firebaseapp.com">try again!
+	    			</button>
+					</form>
+				</div>
+			</section>
+			<section class = "popups">
+		</script>
 
-    <img src="https://maps.googleapis.com/maps/api/streetview?size=800x400&location=42.368714,-71.109852&fov=90&heading=235&pitch=10&key=AIzaSyD2RutsE6F-x6_XjHv9dGdOjrrEvcAW9Sc">
-			</div>
-			<div class="buttons">
-				<button id = "createRoom" class="button_createroom">try again</button>
-			</div>
-		</section>
-		<section class = "popups">
-		<!-- Trigger/Open The Modal -->
-
-			<!-- The Modal -->
-			<div id="createRoomModal" class="modal">
-
-			  <!-- Modal content -->
-				<div class="modal-content">
-			    	<div class="modal-header">
-			      		<span class="close">x</span>
-			      			<h2>Room Key Code</h2>
-			    	</div>
-				    <div class="modal-body">
-				      	<p>Your room key code is: </p>
-				    </div>
-			  	</div>
-			</div>
-
-			<!-- The Modal -->
-			<div id="joinRoomModal" class="modal">
-
-			  <!-- Modal content -->
-				<div class="modal-content">
-			    	<div class="modal-header">
-			      		<span class="close">x</span>
-			      			<h2>Room Key Code</h2>
-			    	</div>
-				    <div class="modal-body">
-				    	<p></p>
-				    	<form action="demo_form.asp">
-							Enter your room key code: <input type="text" name="FirstName"><br><br>
-							<input type="submit" value="Submit">
-							<br><br>
-						</form>
-				    </div>
-			  	</div>
-			</div>
-		</section>
+		<div class="box"></div>
 	</body>
-	<script>
-		/*CREATE ROOM*/
-		// Get the modal
-		var createRoomM = document.getElementById("createRoomModal");
-
-		// Get the button that opens the modal
-		var btnCreate = document.getElementById("createRoom");
-
-		// Get the <span> element that closes the modal
-		var span = document.getElementsByClassName("close")[0];
-
-		// When the user clicks the button, open the modal
-		btnCreate.onclick = function() {
-		    createRoomM.style.display = "block";
-		}
-
-		// When the user clicks on <span> (x), close the modal
-		span.onclick = function() {
-		    createRoomM.style.display = "none";
-		}
-
-		// When the user clicks anywhere outside of the modal, close it
-		window.onclick = function(event) {
-		    if (event.target == createRoomM) {
-		        createRoomM.style.display = "none";
-		    }
-		}
-
-		/*JOIN ROOM*/
-		// Get the modal
-		var joinRoomM = document.getElementById("joinRoomModal");
-
-		// Get the button that opens the modal
-		var btnJoin = document.getElementById("joinRoom");
-
-		// Get the <span> element that closes the modal
-		var span = document.getElementsByClassName("close")[0];
-
-		// When the user clicks the button, open the modal
-		btnJoin.onclick = function() {
-		    joinRoomM.style.display = "block";
-		}
-
-		// When the user clicks on <span> (x), close the modal
-		span.onclick = function() {
-		    joinRoomM.style.display = "none";
-		}
-
-		// When the user clicks anywhere outside of the modal, close it
-		window.onclick = function(event) {
-		    if (event.target == joinRoomM) {
-		        joinRoomM.style.display = "none";
-		    }
-		}
-	</script>
 </html>
