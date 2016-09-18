@@ -106,7 +106,7 @@ body {
 	-o-transition-duration: .5s;
 }
 
-#createRoom, #joinRoom, #enterRoom {
+#createRoom, #joinRoom, #enterRoom, input[type=text] {
     border: none;
     color: white;
     padding: 15px 32px;
@@ -119,7 +119,7 @@ body {
 	-o-transition-duration: 1s;
 }
 
-#createRoom:hover, #joinRoom:hover, #enterRoom:hover {
+#createRoom:hover, #joinRoom:hover, #enterRoom:hover, input[type=submit] {
 	background-color: #C3C3C3;
 	-webkit-transition-duration: 0.5s; 
 	-moz-transition-duration: 0.5s;
@@ -197,10 +197,11 @@ body {
 
 /* Modal Header */
 .modal-header {
-    padding: 2px 16px 2px 16px;
+    padding: 2px 16px;
     background-color: #D1E751;
     color: white;
 }
 
 /* Modal Body */
-.modal-body {padding: 2px 16px;}
+.modal-body {padding: 2px 16px 16px 16px;}
+
