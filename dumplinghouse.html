@@ -9,12 +9,27 @@
 		<script type="text/javascript" src="js/jquery.js"></script>
 		<script type="text/javascript" src="js/modal.js"></script>
 		<script type="text/javascript" src="js/jquery.leanModal.min.js"></script>
+		<style>
+	      html, body {
+	        height: 100%;
+	        margin: 0;
+	        padding: 0;
+	      }
+	      #pano {
+	        float: left;
+	        height: 100%;
+	        width: 100%;
+	      }
+	}
+}
+    	</style>
 	</head>
 	<section class="title">
 		<div class="name">
 			<h1>dumpling house</h1>		
 		</div>
 	</section>
+	
 	<body>
 		<div id="pano"></div>
 		<script async defer
@@ -52,3 +67,41 @@
 		<div class="box"></div>
 	</body>
 </html>
+=======
+	<div id="pano"></div>
+	<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefpdnNlPRGifpe2wiIoeTvc0ty1YmDzw&callback=initialize">
+    </script>
+    <script>
+      function initialize() {
+        var location = {lat: 42.368714, lng: -71.109852};
+        var panorama = new google.maps.StreetViewPanorama(
+            document.getElementById('pano'), {
+              position: location,
+              pov: {
+                heading: 34,
+                pitch: 10
+              }
+            });
+        map.setStreetView(panorama);
+      }
+    </script>
+
+		<section class="content">
+			<div class="location">
+				<p>located at asjdfl;sajkl;;dsa</p>
+			</div>
+			<div class="buttons">
+				<!--<button id = "createRoom" class="button_createroom">try again</button>-->
+				<form>
+				<button id = "tryAgain" class="button_tryagain" formaction="https://wheretoeat-5ff05.firebaseapp.com">try again!
+    			</button>
+				</form>
+			</div>
+		</section>
+		<section class = "popups">
+	</script>
+
+	<div class="box"></div>
+</html>
+>>>>>>> origin/frontend
